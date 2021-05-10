@@ -63,6 +63,6 @@
   "homepage": "https://github.com/hdorgeval/gatsby-starter-ts-hello-world#readme",
   "engines": {
     "vscode": "^1.18.0",
-    "node": ">=6.4.0"
+    "node": "12.x"
   }
 }
