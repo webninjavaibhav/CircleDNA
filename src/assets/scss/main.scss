@@ -1,0 +1,96 @@
+:root {
+  --offerColor: #d15651;
+  --offerPriceColor: #F1564A;
+  --discountColor: #EF4861;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --primaryColor: #494a4d;
+  --bgColor: #F4F2EE;
+  --brandColor: #4089EC;
+  --green_300: #00634B;
+  --green_200: #00A57D;
+  --darkBlueColor: #05183C;
+  --blackShadeColor: #333333;
+  --greyColor: #7E7E7E;
+  --lightGrey_300: #6D6F72;
+  --lightGrey_200: #F7F7F9;
+  --lightGrey_100: #EAEBEE;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.woff');
+}
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('../fonts/Gilroy-Medium.woff');
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('../fonts/Gilroy-Bold.woff');
+}
+
+body {
+  font-family: 'Gilroy';
+}
+
+// HEADER
+.header {
+  background: var(--whiteColor);
+  border: 1.5px solid var(--lightGrey_100);
+  display: flex;
+  align-items: center;
+  height: 88px;
+  &_logo {
+    margin-right: 56px;
+  }
+  &_menu {
+    border-bottom: 0;
+    li {
+      font-weight: bold;
+      font-size: 16px;
+      color: var(--primaryColor);
+      sup {
+        font-size: 10px;
+        color: var(--offerColor);
+        font-weight: bold;
+      }
+    }
+  }
+  &_cart {
+    margin-left: auto;
+    border-bottom: 0;
+    li {
+      font-weight: bold;
+      font-size: 16px;
+      color: var(--primaryColor);
+    }
+  }
+}
+
+//HOME BANNER
+.banner{
+  background-color: var(--bgColor);
+  padding-top: 22px;
+  &_container{
+    padding:  0 50px;
+    @media(max-width: 768px) {
+      padding:  0 32px;
+    }
+  }
+}
+
+//FEATURE
+.feature{
+  background-color: var(--darkBlueColor);
+}
+
+//PRODUCTKIT
+.productKit{
+  background-color: var(--lightGrey_200);
+  padding: 72px 87px 110px;
+  @media(max-width: 768px) {
+    padding: 35px;
+  }
+}
